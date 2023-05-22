@@ -7,3 +7,6 @@ v1.0.0
 
 v1.0.1
 -Wired OpenMultip to index
+
+v1.0.2
+-Update API
