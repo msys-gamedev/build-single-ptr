@@ -185,12 +185,6 @@
             }
 
 
-            function MuteAudio(){
-                unityInstance.SendMessage("[Bridge]", "MuteAudio");
-            }
-            function UnMuteAudio(){
-                unityInstance.SendMessage("[Bridge]", "UnMuteAudio");
-            }
 
 
 
@@ -206,6 +200,12 @@
         });
       };
       document.body.appendChild(script);
+      function MuteAudio(){
+        unityInstance.SendMessage("[Bridge]", "MuteAudio");
+      }
+      function UnMuteAudio(){
+        unityInstance.SendMessage("[Bridge]", "UnMuteAudio");
+      }
     </script>
   </body>
 </html>
