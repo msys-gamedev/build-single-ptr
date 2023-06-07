@@ -183,11 +183,6 @@
                     unityInstance.SendMessage("[Bridge]", "TogglePause", "UNPAUSED");
                 }
             }
-
-
-
-
-
             if (typeof document.addEventListener === "undefined" || typeof document[hidden] === "undefined") {
                 console.log("Browser doesn't support the Page visibility API.");
             } else {
@@ -201,10 +196,10 @@
       };
       document.body.appendChild(script);
       function MuteAudio(){
-        unityInstance.SendMessage("[Bridge]", "MuteAudio");
+        unityInstance.SendMessage("External", "MuteAudio");
       }
       function UnMuteAudio(){
-        unityInstance.SendMessage("[Bridge]", "UnMuteAudio");
+        unityInstance.SendMessage("External", "UnMuteAudio");
       }
     </script>
   </body>
