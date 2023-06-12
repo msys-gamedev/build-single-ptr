@@ -159,7 +159,7 @@
 
             var hidden, visibilityChange;
             var isPageVisible = true;
-
+            unityInstance.SendMessage("[Bridge]", "UnMuteAudio");
             if (typeof document.hidden !== "undefined") {
                 hidden = "hidden";
                 visibilityChange = "visibilitychange";
